@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.com">
+<head>
+<meta charset="ISO-8859-1">
+<title>CheckOut</title>
+<link rel="stylesheet" type="text/css"
+	href="/webjars/bootstrap/css/bootstrap.min.css" />
+<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+<script type="text/javascript"
+	src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class = "Container text-center">
+		<h1>Final Checkout details</h1><br>
+	</div>
+	<div class = "Container text-left">
+		<h2>Item Name:   [[${itemname}]]</h2> 
+		<h2>Item Cost:   [[${itemprice}]]</h2>
+		<h2>Item Quantity:   x [[${itemquantity}]]</h2>
+		<h2>Final Total:  [[${finaltotal}]]</h2>
+	</div>
+	
+	<div  class = "container text-center">
+		<a th:href = "@{/}">Go To HomePage</a>
+	</div>
+</body>
+</html>

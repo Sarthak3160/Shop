@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.com">
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome to Shop</title>
+<link rel="stylesheet" type="text/css"
+	href="/webjars/bootstrap/css/bootstrap.min.css" />
+<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+<script type="text/javascript"
+	src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container text-left">
+		<h1>[[${itemname}]]</h1>
+		<br>
+	</div>
+
+	<div class="container text-center">
+		<h3>[[${iteminfo}]]</h3>
+	</div>
+	<br>
+
+	<div class="container text-center">
+		<h3>[[${itemprice}]]</h3>
+	</div>
+
+	<div class="container text-left">
+		<form th:action="@{/checkout}" name="quantity">
+			<label class="col-4 col-form-label">Quantity </label>
+			<div class="col-4">
+				<input type="number" class="form-control" name="quantity" />
+			</div>
+			<br>
+			<button type="submit" class="btn btn-large btn-success">Buy
+				Now</button>
+	</div>
+	</form>
+	</div>
+
+
+
+
+</body>
+</html>
